@@ -20,6 +20,10 @@
 		FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962AC1FA688F900D75A8F /* UserJwtControllerService.swift */; };
 		FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962AE1FA6892800D75A8F /* ApiResponse.swift */; };
 		FC8962B21FA68C5700D75A8F /* QotdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962B11FA68C5700D75A8F /* QotdViewController.swift */; };
+		FC8962B61FA6B72E00D75A8F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962B51FA6B72E00D75A8F /* SignUpViewController.swift */; };
+		FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */; };
+		FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */; };
+		FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		FC8962AC1FA688F900D75A8F /* UserJwtControllerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJwtControllerService.swift; sourceTree = "<group>"; };
 		FC8962AE1FA6892800D75A8F /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FC8962B11FA68C5700D75A8F /* QotdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QotdViewController.swift; sourceTree = "<group>"; };
+		FC8962B51FA6B72E00D75A8F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountRequest.swift; sourceTree = "<group>"; };
+		FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		FC3FD0FC1FA67A4A002E6529 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC8962B91FA6BF4200D75A8F /* account-resource */,
 				FC8962A31FA67F6B00D75A8F /* user-jwt-controller */,
 				FC8962AE1FA6892800D75A8F /* ApiResponse.swift */,
 			);
@@ -117,6 +126,7 @@
 		FC3FD0FD1FA67A51002E6529 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FC8962B31FA6B71200D75A8F /* Sign Up */,
 				FC8962A81FA67FCB00D75A8F /* Login */,
 			);
 			name = ViewModels;
@@ -125,6 +135,7 @@
 		FC3FD0FE1FA67A5B002E6529 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC8962B41FA6B71B00D75A8F /* Sign Up */,
 				FC8962B01FA68C4400D75A8F /* QOTD */,
 				FC8962A01FA67F4800D75A8F /* Login */,
 				FC3FD1001FA67A79002E6529 /* Landing Screen */,
@@ -135,6 +146,7 @@
 		FC3FD0FF1FA67A60002E6529 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FC8962BC1FA6BFE900D75A8F /* account-resource */,
 				FC8962AB1FA688CD00D75A8F /* user-jwt-controller */,
 			);
 			name = Services;
@@ -187,6 +199,38 @@
 				FC8962B11FA68C5700D75A8F /* QotdViewController.swift */,
 			);
 			name = QOTD;
+			sourceTree = "<group>";
+		};
+		FC8962B31FA6B71200D75A8F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		FC8962B41FA6B71B00D75A8F /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				FC8962B51FA6B72E00D75A8F /* SignUpViewController.swift */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		FC8962B91FA6BF4200D75A8F /* account-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */,
+			);
+			name = "account-resource";
+			sourceTree = "<group>";
+		};
+		FC8962BC1FA6BFE900D75A8F /* account-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */,
+			);
+			name = "account-resource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +369,16 @@
 			files = (
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
 				FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */,
+				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,
+				FC8962B61FA6B72E00D75A8F /* SignUpViewController.swift in Sources */,
+				FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */,
 				FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */,
 				FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */,
 				FC8962B21FA68C5700D75A8F /* QotdViewController.swift in Sources */,
 				FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */,
+				FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */,
 				FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

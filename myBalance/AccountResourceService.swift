@@ -1,5 +1,5 @@
 //
-//  UserJwtControllerService.swift
+//  AccountResourceService.swift
 //  myBalance
 //
 //  Created by Andrew Mogg on 10/29/17.
@@ -11,40 +11,34 @@ import SwiftyJSON
 import Alamofire
 
 
-
-class UserJwtControllerService {
+class AccountResourceService {
     
-    
-    
-    class func authenticate(login: LoginRequest) -> ApiResponse {
+    class func register(register: RegisterAccountRequest) -> ApiResponse {
         let parameters: Parameters = [
-            "password": login.password,
-            "username": login.username,
+            "password": register.password,
+            "login": register.username,
+            "firstName": register.firstName!,
+            "lastName": register.lastName!
             ]
         
         var requestSuccess = false
         var msg = ""
         
         // Convert URL to NSURL
-        let url = URL(string: "http://localhost:8080/api/authenticate")
-
+        let url = URL(string: "http://localhost:8080/api/register")
         
         Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
-            .responseJSON { response in
+            .responseString { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
                     
                     //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
-                    let token = json["id_token"].string!
+                    let statusCode = json["statusCode"].string!
                     
-                    
-                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    
-                    appDelegate.tokenVal = token
                     
                     requestSuccess = true
-                    print("found token")
+                    print("status: \(statusCode)")
                     
                 case .failure(let error):
                     requestSuccess = false
