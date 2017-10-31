@@ -49,7 +49,7 @@ class AccountResourceService {
                    // print("status: \(statusCode)")
                     
                 case .failure(let error):
-                    completionHandler(false, nil, error)
+                    completionHandler(false, JSON.null, error)
 
                     print(error)
                 }

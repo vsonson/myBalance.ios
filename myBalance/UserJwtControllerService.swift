@@ -34,18 +34,13 @@ class UserJwtControllerService {
                     let json = JSON(value)
                     
                     //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
-                    let token = json["id_token"].string!
-                    
-                    
-                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    
-                    appDelegate.tokenVal = token
+                    let token = json["id_token"].string!                    
                     
                     completionHandler(true, json, nil)
                     print("token: \(token)")
                     
                 case .failure(let error):
-                    completionHandler(false, nil, error)
+                    completionHandler(false, JSON.null, error)
                     
                     print(error)
                 }
