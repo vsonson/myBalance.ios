@@ -69,14 +69,15 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
         }
         else{
             
-            let response = AccountResourceService.register(register: registerAccountRequest)
-            if (response.success)
+            AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
+            if (success)
             {
                 self.performSegue(withIdentifier: "registerSuccess", sender: self);
                 
             }
             else{
-                showAlertViewControllers("Sign in Failed!", errorMessage: response.message)
+                self.showAlertViewControllers("Sign Up Failed!", errorMessage: error as! String)
+            }
             }
             
         }

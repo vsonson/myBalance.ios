@@ -16,14 +16,12 @@ class UserJwtControllerService {
     
     
     
-    class func authenticate(login: LoginRequest) -> ApiResponse {
+    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, Error?) -> Void) {
         let parameters: Parameters = [
             "password": login.password,
             "username": login.username,
             ]
-        
-        var requestSuccess = false
-        var msg = ""
+    
         
         // Convert URL to NSURL
         let url = URL(string: "http://localhost:8080/api/authenticate")
@@ -43,18 +41,15 @@ class UserJwtControllerService {
                     
                     appDelegate.tokenVal = token
                     
-                    requestSuccess = true
-                    print("found token")
+                    completionHandler(true, json, nil)
+                    print("token: \(token)")
                     
                 case .failure(let error):
-                    requestSuccess = false
-                    msg = error.localizedDescription
+                    completionHandler(false, nil, error)
                     
                     print(error)
                 }
-        }
-        return ApiResponse(success: true, message: msg)
-        
+        }        
     }
     
 }

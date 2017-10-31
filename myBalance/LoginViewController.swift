@@ -66,14 +66,16 @@ class LoginViewController: UIViewController, LoginViewModelDelegate, UITextField
         }
         else{
             
-            let response = UserJwtControllerService.authenticate(login: loginRequest)
-            if (response.success)
-            {
-                self.performSegue(withIdentifier: "login", sender: self);
-                
-            }
-            else{
-                showAlertViewControllers("Sign in Failed!", errorMessage: response.message)
+            UserJwtControllerService.authenticate(login: loginRequest) { (success, json, error) in
+                if (success)
+                {
+                    self.performSegue(withIdentifier: "login", sender: self);
+                    
+                }
+                else{
+                    self.showAlertViewControllers("Sign in Failed!", errorMessage: error as! String)
+                }
+
             }
             
         }
