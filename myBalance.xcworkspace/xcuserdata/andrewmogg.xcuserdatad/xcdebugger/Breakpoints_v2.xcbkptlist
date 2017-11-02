@@ -58,7 +58,7 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/SignUpViewController.swift"
-                  timestampString = "531285163.187079"
+                  timestampString = "531286175.026924"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
@@ -73,12 +73,60 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/SignUpViewController.swift"
-                  timestampString = "531285163.190145"
+                  timestampString = "531286175.029918"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "73"
                   endingLineNumber = "73"
                   offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myBalance/UserJwtControllerService.swift"
+            timestampString = "531286173.920463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "authenticate(login:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static myBalance.UserJwtControllerService.(authenticate (login : myBalance.LoginRequest, completionHandler : (Swift.Bool, SwiftyJSON.JSON, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "myBalance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
+                  timestampString = "531286175.036428"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "3775">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static myBalance.UserJwtControllerService.(authenticate (login : myBalance.LoginRequest, completionHandler : (Swift.Bool, SwiftyJSON.JSON, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "myBalance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
+                  timestampString = "531286175.039032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "4201">
                </Location>
             </Locations>
          </BreakpointContent>

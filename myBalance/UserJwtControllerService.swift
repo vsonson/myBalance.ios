@@ -16,7 +16,7 @@ class UserJwtControllerService {
     
     
     
-    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, Error?) -> Void) {
+    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
         let parameters: Parameters = [
             "password": login.password,
             "username": login.username,
@@ -29,20 +29,26 @@ class UserJwtControllerService {
         
         Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    
-                    //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
-                    let token = json["id_token"].string!                    
-                    
-                    completionHandler(true, json, nil)
-                    print("token: \(token)")
-                    
-                case .failure(let error):
-                    completionHandler(false, JSON.null, error)
-                    
-                    print(error)
+                
+                let json = JSON(response.result.value!)
+                
+                if let status = response.response?.statusCode {
+                    switch(status){
+                    case 200:
+                        completionHandler(true, json, nil)
+                    case 400:
+                        let error  = json["message"].string!
+                        completionHandler(false, JSON.null, error)
+
+                    case 401:
+                        let error  = json["AuthenticationException"].string!
+                        completionHandler(false, JSON.null, error)
+
+
+                    default:
+                        let error  = "Server Error!"
+                        completionHandler(false, JSON.null, error)
+                    }
                 }
         }        
     }
