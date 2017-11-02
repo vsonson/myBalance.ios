@@ -69,7 +69,7 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
         }
         else{
             
-            AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
+            AccountResourceService.register(register: registerAccountRequest) { (success, json) in
             if (success)
             {
                  let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
@@ -82,7 +82,7 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
                 
             }
             else{
-                self.showAlertViewControllers("Sign Up Failed!", errorMessage: error as! String)
+                self.showAlertViewControllers("Sign Up Failed!", errorMessage: json.rawString()!)
             }
             }
             

@@ -38,7 +38,7 @@ class AccountResourceService {
 //    "login": "mogg",
 //    "password": "mogg"
     
-    class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, Error?) -> Void) {
+    class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON) -> Void) {
         let parameters: Parameters = [
             "activated": true,
             "authorities": [
@@ -57,22 +57,35 @@ class AccountResourceService {
         
         Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
             .responseString { response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    
-                    //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
-                    //let statusCode = json["statusCode"].string!
-                    
-                            
-                    completionHandler(true, json, nil)
-                   // print("status: \(statusCode)")
-                    
-                case .failure(let error):
-                    completionHandler(false, JSON.null, error)
-
-                    print(error)
+                
+                let json = JSON(response.result.value!)
+                if let status = response.response?.statusCode {
+                    switch(status){
+                    case 201:
+                        completionHandler(true, json)
+                    default:
+                        completionHandler(false, json)
+                        
+                        //print(error)
+                    }
                 }
+                
+//                switch response.result {
+//                case .success(let value):
+//                    let json = JSON(value)
+//                    
+//                    //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
+//                    //let statusCode = json["statusCode"].string!
+//                    
+//                            
+//                    completionHandler(true, json, nil)
+//                   // print("status: \(statusCode)")
+//                    
+//                case .failure(let error):
+//                    completionHandler(false, JSON.null, error)
+//
+//                    print(error)
+//                }
         }
         
     }
