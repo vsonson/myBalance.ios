@@ -24,6 +24,7 @@
 		FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */; };
 		FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */; };
 		FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */; };
+		FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountRequest.swift; sourceTree = "<group>"; };
 		FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceService.swift; sourceTree = "<group>"; };
+		FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtOfDayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		FC3FD0FF1FA67A60002E6529 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FCBB84531FAACB9E00499326 /* thought-of-day-resource */,
 				FC8962BC1FA6BFE900D75A8F /* account-resource */,
 				FC8962AB1FA688CD00D75A8F /* user-jwt-controller */,
 			);
@@ -231,6 +234,14 @@
 				FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */,
 			);
 			name = "account-resource";
+			sourceTree = "<group>";
+		};
+		FCBB84531FAACB9E00499326 /* thought-of-day-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */,
+			);
+			name = "thought-of-day-resource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
+				FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */,
 				FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */,
 				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
