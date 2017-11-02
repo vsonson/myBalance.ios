@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-82-XDV" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="52" y="298" width="269" height="39"/>
+                                <rect key="frame" x="52" y="297.5" width="269" height="39.5"/>
                                 <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -503,6 +503,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="z3f-JW-XsO" kind="show" identifier="registerSuccess" id="bgm-gE-yaq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d3B-PB-aX7" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="54" y="200" width="265" height="39"/>
@@ -668,7 +671,7 @@
                         <outlet property="passwordTextField" destination="KcO-0p-zhj" id="puA-eh-0On"/>
                         <outlet property="registerButton" destination="NM0-Tm-TUT" id="Jc0-Fy-cjK"/>
                         <outlet property="usernameTextField" destination="d3B-PB-aX7" id="M0P-lK-ifS"/>
-                        <segue destination="fO5-xU-ufv" kind="show" identifier="registerSuccess" id="piU-PV-gGC"/>
+                        <segue destination="z3f-JW-XsO" kind="show" id="WUy-dg-JyG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtM-rX-Qhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -684,6 +687,6 @@
         <image name="facebook-icon-30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="piU-PV-gGC"/>
+        <segue reference="bgm-gE-yaq"/>
     </inferredMetricsTieBreakers>
 </document>

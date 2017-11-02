@@ -24,10 +24,30 @@ class AccountResourceService {
 //            // return the data task
 //    }
     
+    
+//    "activated": true,
+//    "authorities": [
+//    "user"
+//    ],
+//    "createdBy": "string",
+//    "createdDate": "2017-11-02T02:02:58.528Z",
+//    "email": "mogg.andrew@gmail.com",
+//    "firstName": "Andrew",
+//    "langKey": "EN",
+//    "lastName": "Mogg",
+//    "login": "mogg",
+//    "password": "mogg"
+    
     class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, Error?) -> Void) {
         let parameters: Parameters = [
+            "activated": true,
+            "authorities": [
+                    "user"
+            ],
+            "langKey": "EN",
             "password": register.password,
-            "login": register.username,
+            "login": register.password,
+            "email": register.username,
             "firstName": register.firstName!,
             "lastName": register.lastName!
             ]

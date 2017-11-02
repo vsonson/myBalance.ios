@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/SignUpViewController.swift"
@@ -38,7 +38,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/SignUpViewController.swift"
@@ -51,14 +51,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "myBalance.SignUpViewController.registerButtonPressed (__ObjC.UIButton) -&gt; ()"
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/SignUpViewController.swift"
-                  timestampString = "531107171.726949"
+                  timestampString = "531196382.412397"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
@@ -66,14 +66,14 @@
                   offsetFromSymbolStart = "3072">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "myBalance.SignUpViewController.(registerButtonPressed (__ObjC.UIButton) -&gt; ()).(closure #1)"
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/SignUpViewController.swift"
-                  timestampString = "531107171.729139"
+                  timestampString = "531196382.41786"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "73"
@@ -106,7 +106,7 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/LoginViewController.swift"
-                  timestampString = "531107171.742752"
+                  timestampString = "531283716.204014"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -121,7 +121,7 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/LoginViewController.swift"
-                  timestampString = "531107171.744667"
+                  timestampString = "531283716.206353"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -144,38 +144,6 @@
             startingLineNumber = "70"
             endingLineNumber = "70"
             landmarkName = "loginButtonPressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "myBalance/UserJwtControllerService.swift"
-            timestampString = "531106946.938329"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "authenticate(login:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "myBalance/UserJwtControllerService.swift"
-            timestampString = "531108059.918144"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "authenticate(login:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

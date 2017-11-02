@@ -72,7 +72,13 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
             AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
             if (success)
             {
-                self.performSegue(withIdentifier: "registerSuccess", sender: self);
+                 let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
+                //self.performSegue(withIdentifier: "registerSuccess", sender: self);
+                
+                alert.addAction(UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "registerSuccess", sender: self) }))
+                
+                self.present(alert, animated: true, completion: nil)
+
                 
             }
             else{
