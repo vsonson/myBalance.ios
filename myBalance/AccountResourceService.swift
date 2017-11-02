@@ -13,32 +13,7 @@ import Alamofire
 
 class AccountResourceService {
     
-    
-//    open func dataTask(with request: URLRequest,
-//                       completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void)
-//        -> URLSessionDataTask {
-//            // make an URL request
-//            // wait for results
-//            // check for errors and stuff
-//            completionHandler(data, response, error)
-//            // return the data task
-//    }
-    
-    
-//    "activated": true,
-//    "authorities": [
-//    "user"
-//    ],
-//    "createdBy": "string",
-//    "createdDate": "2017-11-02T02:02:58.528Z",
-//    "email": "mogg.andrew@gmail.com",
-//    "firstName": "Andrew",
-//    "langKey": "EN",
-//    "lastName": "Mogg",
-//    "login": "mogg",
-//    "password": "mogg"
-    
-    class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON) -> Void) {
+    class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
         let parameters: Parameters = [
             "activated": true,
             "authorities": [
@@ -62,30 +37,20 @@ class AccountResourceService {
                 if let status = response.response?.statusCode {
                     switch(status){
                     case 201:
-                        completionHandler(true, json)
-                    default:
-                        completionHandler(false, json)
+                        completionHandler(true, json, nil)
+                    case 400:
+                        completionHandler(false, JSON.null, json.rawString())
                         
-                        //print(error)
+                    case 401:
+                        let error  = json["AuthenticationException"].string!
+                        completionHandler(false, JSON.null, error)
+                        
+                        
+                    default:
+                        let error  = "Server Error!"
+                        completionHandler(false, JSON.null, error)
                     }
                 }
-                
-//                switch response.result {
-//                case .success(let value):
-//                    let json = JSON(value)
-//                    
-//                    //                  let jsonData = JSON(response.result.value!)  //unwrap the data (because it was optional) & use SwiftyJSON
-//                    //let statusCode = json["statusCode"].string!
-//                    
-//                            
-//                    completionHandler(true, json, nil)
-//                   // print("status: \(statusCode)")
-//                    
-//                case .failure(let error):
-//                    completionHandler(false, JSON.null, error)
-//
-//                    print(error)
-//                }
         }
         
     }
