@@ -62,31 +62,37 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
                                                             firstName: firstName,
                                                             lastName: lastName)
         
+        let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
+        //self.performSegue(withIdentifier: "registerSuccess", sender: self);
         
-        if (username.isEmpty || password.isEmpty || firstName.isEmpty || lastName.isEmpty)
-        {
-            showAlertViewControllers("Sign Up Failed!", errorMessage: "Please enter all fields!")
-        }
-        else{
-            
-            AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
-            if (success)
-            {
-                 let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
-                //self.performSegue(withIdentifier: "registerSuccess", sender: self);
-                
-                alert.addAction(UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "registerSuccess", sender: self) }))
-                
-                self.present(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "createAccount", sender: self) }))
+        
+        self.present(alert, animated: true, completion: nil)
 
-                
-            }
-            else{
-                self.showAlertViewControllers("Sign Up Failed!", errorMessage: error!)
-            }
-            }
-            
-        }
+//        if (username.isEmpty || password.isEmpty || firstName.isEmpty || lastName.isEmpty)
+//        {
+//            showAlertViewControllers("Sign Up Failed!", errorMessage: "Please enter all fields!")
+//        }
+//        else{
+//            
+//            AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
+//            if (success)
+//            {
+//                 let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
+//                //self.performSegue(withIdentifier: "registerSuccess", sender: self);
+//                
+//                alert.addAction(UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "registerSuccess", sender: self) }))
+//                
+//                self.present(alert, animated: true, completion: nil)
+//
+//                
+//            }
+//            else{
+//                self.showAlertViewControllers("Sign Up Failed!", errorMessage: error!)
+//            }
+//            }
+//            
+//        }
         
         
     }

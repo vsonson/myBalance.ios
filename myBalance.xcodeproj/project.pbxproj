@@ -13,6 +13,7 @@
 		FC3FD0F21FA678B7002E6529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F11FA678B7002E6529 /* Assets.xcassets */; };
 		FC3FD0F51FA678B7002E6529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F31FA678B7002E6529 /* LaunchScreen.storyboard */; };
 		FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */; };
+		FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */; };
 		FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */; };
 		FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A41FA67F8A00D75A8F /* LoginRequest.swift */; };
 		FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A61FA67F9800D75A8F /* AuthenticateResponse.swift */; };
@@ -24,6 +25,8 @@
 		FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */; };
 		FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */; };
 		FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */; };
+		FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */; };
+		FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4571FB153C300925441 /* AddProfileRequest.swift */; };
 		FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,7 @@
 		FC3FD0F41FA678B7002E6529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3FD0F61FA678B7002E6529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
+		FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC8962A41FA67F8A00D75A8F /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		FC8962A61FA67F9800D75A8F /* AuthenticateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateResponse.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountRequest.swift; sourceTree = "<group>"; };
 		FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceService.swift; sourceTree = "<group>"; };
+		FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewModel.swift; sourceTree = "<group>"; };
+		FCA6F4571FB153C300925441 /* AddProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileRequest.swift; sourceTree = "<group>"; };
 		FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtOfDayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				FC8962B71FA6BC3700D75A8F /* SignUpViewModel.swift */,
+				FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				FC8962B51FA6B72E00D75A8F /* SignUpViewController.swift */,
+				FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				FC8962BA1FA6BF5A00D75A8F /* RegisterAccountRequest.swift */,
+				FCA6F4571FB153C300925441 /* AddProfileRequest.swift */,
 			);
 			name = "account-resource";
 			sourceTree = "<group>";
@@ -274,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Andrew Mogg";
 				TargetAttributes = {
 					FC3FD0E61FA678B7002E6529 = {
@@ -378,9 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */,
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
 				FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */,
 				FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */,
+				FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */,
+				FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */,
 				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,
@@ -427,7 +439,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -435,7 +449,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -477,7 +495,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -485,7 +505,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -520,7 +544,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmogg.myBalance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -534,7 +558,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmogg.myBalance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
