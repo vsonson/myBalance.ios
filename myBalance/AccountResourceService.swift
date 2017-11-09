@@ -13,7 +13,7 @@ import Alamofire
 
 class AccountResourceService {
     
-    class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
+   class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
         let parameters: Parameters = [
             "activated": true,
             "authorities": [

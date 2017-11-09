@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F40C76B4B2285541A28B58EF /* Pods_myBalance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2365E9D6DA1B42E93DB5C5BC /* Pods_myBalance.framework */; };
+		FC0BC50F1FB3F63200225270 /* UserInfoResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BC50E1FB3F63200225270 /* UserInfoResourceService.swift */; };
+		FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BC5111FB3F67E00225270 /* UserInfo.swift */; };
 		FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FD0EA1FA678B7002E6529 /* AppDelegate.swift */; };
 		FC3FD0F01FA678B7002E6529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0EE1FA678B7002E6529 /* Main.storyboard */; };
 		FC3FD0F21FA678B7002E6529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F11FA678B7002E6529 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		2365E9D6DA1B42E93DB5C5BC /* Pods_myBalance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myBalance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A244F8D8FB0FC5301867EE30 /* Pods-myBalance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBalance.release.xcconfig"; path = "Pods/Target Support Files/Pods-myBalance/Pods-myBalance.release.xcconfig"; sourceTree = "<group>"; };
 		E8C6AF305674208A9DC9C7F2 /* Pods-myBalance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBalance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myBalance/Pods-myBalance.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0BC50E1FB3F63200225270 /* UserInfoResourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResourceService.swift; sourceTree = "<group>"; };
+		FC0BC5111FB3F67E00225270 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FC3FD0E71FA678B7002E6529 /* myBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FD0EA1FA678B7002E6529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3FD0EF1FA678B7002E6529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +91,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC0BC50D1FB3F60200225270 /* user-info-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC0BC50E1FB3F63200225270 /* UserInfoResourceService.swift */,
+			);
+			name = "user-info-resource";
+			sourceTree = "<group>";
+		};
+		FC0BC5101FB3F66F00225270 /* user-info-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC0BC5111FB3F67E00225270 /* UserInfo.swift */,
+			);
+			name = "user-info-resource";
+			sourceTree = "<group>";
+		};
 		FC3FD0DE1FA678B7002E6529 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +144,7 @@
 		FC3FD0FC1FA67A4A002E6529 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BC5101FB3F66F00225270 /* user-info-resource */,
 				FC8962B91FA6BF4200D75A8F /* account-resource */,
 				FC8962A31FA67F6B00D75A8F /* user-jwt-controller */,
 				FC8962AE1FA6892800D75A8F /* ApiResponse.swift */,
@@ -154,6 +175,7 @@
 		FC3FD0FF1FA67A60002E6529 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BC50D1FB3F60200225270 /* user-info-resource */,
 				FCBB84531FAACB9E00499326 /* thought-of-day-resource */,
 				FC8962BC1FA6BFE900D75A8F /* account-resource */,
 				FC8962AB1FA688CD00D75A8F /* user-jwt-controller */,
@@ -387,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */,
 				FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */,
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
 				FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */,
@@ -397,6 +420,7 @@
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,
 				FC8962B61FA6B72E00D75A8F /* SignUpViewController.swift in Sources */,
+				FC0BC50F1FB3F63200225270 /* UserInfoResourceService.swift in Sources */,
 				FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */,
 				FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */,
 				FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */,

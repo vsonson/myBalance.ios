@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/LoginViewController.swift"
-            timestampString = "531106714.204829"
+            timestampString = "531891970.736141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "loginButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/UserJwtControllerService.swift"
-            timestampString = "531286173.920463"
+            timestampString = "531891970.736453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -42,7 +42,7 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
-                  timestampString = "531806718.723039"
+                  timestampString = "531891970.84086"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -57,7 +57,7 @@
                   moduleName = "myBalance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
-                  timestampString = "531806718.726505"
+                  timestampString = "531891970.844251"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -65,6 +65,38 @@
                   offsetFromSymbolStart = "4230">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myBalance/AddProfileViewController.swift"
+            timestampString = "531891970.736635"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "finishProfileButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myBalance/UserInfoResourceService.swift"
+            timestampString = "531891970.737546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "userInfo(userInfo:completionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
