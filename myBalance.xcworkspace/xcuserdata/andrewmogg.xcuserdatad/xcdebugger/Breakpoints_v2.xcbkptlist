@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/LoginViewController.swift"
-            timestampString = "531891970.736141"
+            timestampString = "532146697.501712"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -25,62 +25,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "myBalance/UserJwtControllerService.swift"
-            timestampString = "531891970.736453"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "authenticate(login:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static myBalance.UserJwtControllerService.authenticate(login: myBalance.LoginRequest, completionHandler: (Swift.Bool, SwiftyJSON.JSON, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "myBalance"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
-                  timestampString = "531891970.84086"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "3833">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static myBalance.UserJwtControllerService.authenticate(login: myBalance.LoginRequest, completionHandler: (Swift.Bool, SwiftyJSON.JSON, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "myBalance"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewmogg/Repos/myBalance/myBalance/UserJwtControllerService.swift"
-                  timestampString = "531891970.844251"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "4230">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "myBalance/AddProfileViewController.swift"
             timestampString = "531891970.736635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "finishProfileButtonTapped(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,6 +48,22 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "userInfo(userInfo:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myBalance/ServiceBase.swift"
+            timestampString = "532146697.504902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "ExecuteRequest(parameters:requestType:url:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

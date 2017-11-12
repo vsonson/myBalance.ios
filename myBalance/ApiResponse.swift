@@ -7,12 +7,16 @@
 //
 
 import Foundation
-class ApiResponse {
+import SwiftyJSON
+
+class ApiResponse{
     var success: Bool
     var message: String
+    var json: JSON
     
-    init (success: Bool, message: String) {
+    init (success: Bool, message: String, json: JSON) {
         self.success = success
         self.message = message
+        self.json = json
     }
 }

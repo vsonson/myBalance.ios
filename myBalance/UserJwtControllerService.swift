@@ -12,11 +12,11 @@ import Alamofire
 
 
 
-class UserJwtControllerService {
+class UserJwtControllerService: ServiceBase {
     
     
     
-    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
+    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void){
         let parameters: Parameters = [
             "password": login.password,
             "username": login.username,
@@ -24,33 +24,20 @@ class UserJwtControllerService {
     
         
         // Convert URL to NSURL
-        let url = URL(string: "http://localhost:8080/api/authenticate")
-
+        let url = "authenticate"
         
-        Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
-            .responseJSON { response in
-                
-                let json = JSON(response.result.value!)
-                
-                if let status = response.response?.statusCode {
-                    switch(status){
-                    case 200:
-                        completionHandler(true, json, nil)
-                    case 400:
-                        let error  = json["message"].string!
-                        completionHandler(false, JSON.null, error)
+        ExecuteRequest(parameters: parameters, requestType: .post, url: url) { (success, json, error) in
+            if (success)
+            {
+                completionHandler(true, json, nil)
+            }
+            else{
+               completionHandler(false, json, nil)
+            }
+            
+        }
+        //return ApiResponse(success: successStatus, message: msg, json: jsonResponse)
 
-                    case 401:
-                        let error  = json["AuthenticationException"].string!
-                        completionHandler(false, JSON.null, error)
-
-
-                    default:
-                        let error  = "Server Error!"
-                        completionHandler(false, JSON.null, error)
-                    }
-                }
-        }        
     }
     
 }

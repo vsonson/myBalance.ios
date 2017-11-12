@@ -15,6 +15,7 @@
 		FC3FD0F21FA678B7002E6529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F11FA678B7002E6529 /* Assets.xcassets */; };
 		FC3FD0F51FA678B7002E6529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F31FA678B7002E6529 /* LaunchScreen.storyboard */; };
 		FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */; };
+		FC65C6911FB7E16B005513D2 /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65C6901FB7E16B005513D2 /* ServiceBase.swift */; };
 		FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */; };
 		FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */; };
 		FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A41FA67F8A00D75A8F /* LoginRequest.swift */; };
@@ -45,6 +46,7 @@
 		FC3FD0F41FA678B7002E6529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3FD0F61FA678B7002E6529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
+		FC65C6901FB7E16B005513D2 /* ServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
 		FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC8962A41FA67F8A00D75A8F /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				FCBB84531FAACB9E00499326 /* thought-of-day-resource */,
 				FC8962BC1FA6BFE900D75A8F /* account-resource */,
 				FC8962AB1FA688CD00D75A8F /* user-jwt-controller */,
+				FC65C6901FB7E16B005513D2 /* ServiceBase.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */,
 				FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */,
 				FC8962B21FA68C5700D75A8F /* QotdViewController.swift in Sources */,
+				FC65C6911FB7E16B005513D2 /* ServiceBase.swift in Sources */,
 				FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */,
 				FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */,
 				FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */,
