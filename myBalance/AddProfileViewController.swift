@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, UITextFieldDelegate {
+class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var dateOfBirthTextField: SkyFloatingLabelTextField!
     
@@ -20,6 +20,17 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
     
     @IBOutlet var stateCodeTextField: SkyFloatingLabelTextField!
     @IBOutlet var countryCodeTextField: SkyFloatingLabelTextField!
+    
+    //picker view data
+    let genderPicker = UIPickerView()
+    let yearInCollegePicker = UIPickerView()
+    let divisionPicker = UIPickerView()
+    let statePicker = UIPickerView()
+    let countryPicker = UIPickerView()
+    var PickerData = [String]()
+    var selectedTextField: UITextField = UITextField()
+
+
     var addProfileViewModel: AddProfileViewModel? {
         didSet {
             addProfileViewModel?.delegate = self // Sets delegate to call functions from ViewModel
@@ -28,6 +39,13 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //initialize pickers
+        genderPicker.delegate = self
+        yearInCollegePicker.delegate = self
+        divisionPicker.delegate = self
+        statePicker.delegate = self
+        countryPicker.delegate = self
         
         addProfileViewModel = AddProfileViewModel(profile: AddProfileRequest(dateOfBirth: dateOfBirthTextField.text!, gender: genderTextField.text!, collegeYear: yearInCollegeTextField.text!, collegeDivision: collegeDivisionTextField.text!, country: countryCodeTextField.text!, state: stateCodeTextField.text!))
         
@@ -99,24 +117,113 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
         let formatter = DateFormatter()
         formatter.dateStyle = .short
         dateOfBirthTextField.text = formatter.string(from: sender.date)
-            }
+    }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+    
+    internal func textFieldDidBeginEditing(_ textField: UITextField) {
         
         if (textField.tag == 1) {
+            self.selectedTextField = textField
             let datePicker = UIDatePicker()
             datePicker.datePickerMode = UIDatePickerMode.date;
             dateOfBirthTextField.inputView = datePicker
             datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
         }
+        
+        if (textField.tag == 2) {
+            self.selectedTextField = textField
+            PickerData.removeAll()
+            PickerData = ["Male", "Female", "Non-binary"]
+            genderTextField.inputView = genderPicker
+        }
+        
+        if (textField.tag == 3) {
+            self.selectedTextField = textField
+            PickerData.removeAll()
+            PickerData = ["Freshman", "Sophomore", "Junior", "Senior", "5th Year", "Grad. Student"]
+            yearInCollegeTextField.inputView = yearInCollegePicker
+        }
+        
+        if (textField.tag == 4) {
+            self.selectedTextField = textField
+            PickerData.removeAll()
+            PickerData = ["I", "II", "III", "Club"]
+            collegeDivisionTextField.inputView = divisionPicker
+        }
+        
+        if (textField.tag == 5) {
+            self.selectedTextField = textField
+            PickerData.removeAll()
+            PickerData = [ "AK",
+                           "AL",
+                           "AR",
+                           "AS",
+                           "AZ",
+                           "CA",
+                           "CO",
+                           "CT",
+                           "DC",
+                           "DE",
+                           "FL",
+                           "GA",
+                           "GU",
+                           "HI",
+                           "IA",
+                           "ID",
+                           "IL",
+                           "IN",
+                           "KS",
+                           "KY",
+                           "LA",
+                           "MA",
+                           "MD",
+                           "ME",
+                           "MI",
+                           "MN",
+                           "MO",
+                           "MS",
+                           "MT",
+                           "NC",
+                           "ND",
+                           "NE",
+                           "NH",
+                           "NJ",
+                           "NM",
+                           "NV",
+                           "NY",
+                           "OH",
+                           "OK",
+                           "OR",
+                           "PA",
+                           "PR",
+                           "RI",
+                           "SC",
+                           "SD",
+                           "TN",
+                           "TX",
+                           "UT",
+                           "VA",
+                           "VI",
+                           "VT",
+                           "WA",
+                           "WI",
+                           "WV",
+                           "WY"]
+            stateCodeTextField.inputView = statePicker
+        }
 
+        
+        if (textField.tag == 6) {
+            self.selectedTextField = textField
+            PickerData.removeAll()
+            PickerData = ["US", "CA"]
+            countryCodeTextField.inputView = countryPicker
+        }
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if (textField.tag == 1) {
-            textField.resignFirstResponder()
-        }
+        textField.resignFirstResponder()
         return true
     }
     
@@ -128,6 +235,41 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
     // MARK: Touch Events
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closekeyboard()
+    }
+    
+    // MARK: UIPickerView Delegation
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return PickerData.count
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return PickerData[row]
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (selectedTextField.tag == 2) {
+            genderTextField.text = PickerData[row]
+
+        }
+        if (selectedTextField.tag == 3) {
+            yearInCollegeTextField.text = PickerData[row]
+        }
+        if (selectedTextField.tag == 4) {
+            collegeDivisionTextField.text = PickerData[row]
+            
+        }
+        if (selectedTextField.tag == 5) {
+            stateCodeTextField.text = PickerData[row]
+        }
+        if (selectedTextField.tag == 6) {
+            countryCodeTextField.text = PickerData[row]
+            
+        }
     }
 
     
