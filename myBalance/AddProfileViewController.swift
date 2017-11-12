@@ -102,15 +102,21 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
             }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = UIDatePickerMode.date;
-        textField.inputView = datePicker
-        datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
+        
+        if (textField.tag == 1) {
+            let datePicker = UIDatePicker()
+            datePicker.datePickerMode = UIDatePickerMode.date;
+            dateOfBirthTextField.inputView = datePicker
+            datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
+        }
+
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        dateOfBirthTextField.resignFirstResponder()
+        if (textField.tag == 1) {
+            textField.resignFirstResponder()
+        }
         return true
     }
     
