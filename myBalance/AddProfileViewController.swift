@@ -70,6 +70,7 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
         }
     }
     
+    
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -91,6 +92,36 @@ class AddProfileViewController: UIViewController, AddProfileViewModelDelegate, U
         // Present the alert controller by calling the presentViewController method
         self.present(alertController, animated: true, completion: nil)
         
+    }
+    
+    // MARK: TextField Delegate
+    @objc func datePickerChanged(sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        dateOfBirthTextField.text = formatter.string(from: sender.date)
+            }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = UIDatePickerMode.date;
+        textField.inputView = datePicker
+        datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        dateOfBirthTextField.resignFirstResponder()
+        return true
+    }
+    
+    // MARK: Helper Methods
+    func closekeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    // MARK: Touch Events
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        closekeyboard()
     }
 
     

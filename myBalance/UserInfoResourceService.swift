@@ -17,7 +17,7 @@ class UserInfoResourceService {
     class func userInfo(userInfo: UserInfoRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
 
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "dd-mm-yy"
         
         let date = dateFormatter.date(from: userInfo.dateOfBirth)
         
