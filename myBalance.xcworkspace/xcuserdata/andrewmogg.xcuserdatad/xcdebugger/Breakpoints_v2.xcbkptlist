@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myBalance/UserInfoResourceService.swift"
-            timestampString = "532151697.78445"
+            timestampString = "532151785.6094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "userInfo(userInfo:completionHandler:)"
-            landmarkType = "7">
+            landmarkName = "UserInfoResourceService"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,22 +64,6 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "ExecuteRequest(parameters:requestType:url:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "myBalance/AccountResourceService.swift"
-            timestampString = "532148815.819459"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "register(register:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

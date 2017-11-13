@@ -23,12 +23,11 @@ class UserJwtControllerService: ServiceBase {
             ]
     
         
-        // Convert URL to NSURL
-        let url = "authenticate"
-        
-        ExecuteRequest(parameters: parameters, requestType: .post, url: url) { (success, json, error) in
+        AuthenticateUser(parameters: parameters) { (success, json, error) in
             if (success)
             {
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.tokenVal = json["id_token"].string!
                 completionHandler(true, json, nil)
             }
             else{
@@ -36,7 +35,6 @@ class UserJwtControllerService: ServiceBase {
             }
             
         }
-        //return ApiResponse(success: successStatus, message: msg, json: jsonResponse)
 
     }
     

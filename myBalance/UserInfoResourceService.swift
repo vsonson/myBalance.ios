@@ -12,7 +12,7 @@ import Alamofire
 
 
 
-class UserInfoResourceService {
+class UserInfoResourceService: ServiceBase {
     
     class func userInfo(userInfo: UserInfoRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
 
@@ -34,37 +34,17 @@ class UserInfoResourceService {
             "yearInCollege": userInfo.yearInCollege,
         ]
         
-        // Convert URL to NSURL
-        let url = URL(string: "http://localhost:8080/api/user-infos")
+        let url = "user-infos"
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let headers: HTTPHeaders = [
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "Authorization": "Bearer \(appDelegate.tokenVal)"
-        ]
-        
-        Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
-            .responseString { response in
-                
-                let json = JSON(response.result.value!)
-                if let status = response.response?.statusCode {
-                    switch(status){
-                    case 201:
-                        completionHandler(true, json, nil)
-                    case 400:
-                        completionHandler(false, JSON.null, json.rawString())
-                        
-                    case 401:
-                        let error  = json["AuthenticationException"].string!
-                        completionHandler(false, JSON.null, error)
-                        
-                        
-                    default:
-                        let error  = "Server Error!"
-                        completionHandler(false, JSON.null, error)
-                    }
-                }
+        ExecuteRequest(parameters: parameters, requestType: .post, url: url) { (success, json, error) in
+            if (success)
+            {
+                completionHandler(true, json, nil)
+            }
+            else{
+                completionHandler(false, json, nil)
+            }
+            
         }
         
     }
