@@ -13,7 +13,7 @@ import Alamofire
 
 class AccountResourceService: ServiceBase {
     
-   class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
+   class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, String?) -> Void) {
         let parameters: Parameters = [
             "activated": true,
             "authorities": [
@@ -32,22 +32,20 @@ class AccountResourceService: ServiceBase {
     Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
         .responseJSON { response in
             
-            let json = JSON(response.result.value!)
             if let status = response.response?.statusCode {
                 switch(status){
                 case 201:
-                    completionHandler(true, json, nil)
+                    completionHandler(true, response.error as? String)
                 case 400:
-                    completionHandler(false, JSON.null, json.rawString())
+                    completionHandler(false, response.error as? String)
                     
                 case 401:
-                    let error  = json["AuthenticationException"].string!
-                    completionHandler(false, JSON.null, error)
+                    completionHandler(false, response.error as? String)
                     
                     
                 default:
-                    let error  = "Server Error!"
-                    completionHandler(false, JSON.null, error)
+                    //let error  = "Server Error!"
+                    completionHandler(false, response.error as? String)
                 }
             }
     }
