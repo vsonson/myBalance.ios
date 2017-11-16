@@ -16,27 +16,30 @@ class UserJwtControllerService: ServiceBase {
     
     
     
-    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void){
+    class func authenticate(login: LoginRequest, completionHandler: @escaping (Bool, String, String?) -> Void){
         let parameters: Parameters = [
             "password": login.password,
             "username": login.username,
             ]
     
+        let url = URL(string: "http://localhost:8080/api/authenticate")
         
-        // Convert URL to NSURL
-        let url = "authenticate"
-        
-        ExecuteRequest(parameters: parameters, requestType: .post, url: url) { (success, json, error) in
-            if (success)
-            {
-                completionHandler(true, json, nil)
-            }
-            else{
-               completionHandler(false, json, nil)
-            }
-            
-        }
-        //return ApiResponse(success: successStatus, message: msg, json: jsonResponse)
+        Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    let token = json["id_token"].string!
+                    print("token: \(token)")
+
+                    completionHandler(true, token, nil)
+                    
+                case .failure(let error):
+                    completionHandler(false, "", error as? String)
+                    
+                    print(error)
+                }
+        }        
 
     }
     

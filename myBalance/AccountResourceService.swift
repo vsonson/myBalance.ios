@@ -11,9 +11,9 @@ import SwiftyJSON
 import Alamofire
 
 
-class AccountResourceService {
+class AccountResourceService: ServiceBase {
     
-   class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, JSON, String?) -> Void) {
+   class func register(register: RegisterAccountRequest, completionHandler: @escaping (Bool, String?) -> Void) {
         let parameters: Parameters = [
             "activated": true,
             "authorities": [
@@ -26,33 +26,28 @@ class AccountResourceService {
             "firstName": register.firstName!,
             "lastName": register.lastName!
             ]
-        
-        // Convert URL to NSURL
-        let url = URL(string: "http://localhost:8080/api/register")
-        
-        Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
-            .responseString { response in
-                
-                let json = JSON(response.result.value!)
-                if let status = response.response?.statusCode {
-                    switch(status){
-                    case 201:
-                        completionHandler(true, json, nil)
-                    case 400:
-                        completionHandler(false, JSON.null, json.rawString())
-                        
-                    case 401:
-                        let error  = json["AuthenticationException"].string!
-                        completionHandler(false, JSON.null, error)
-                        
-                        
-                    default:
-                        let error  = "Server Error!"
-                        completionHandler(false, JSON.null, error)
-                    }
-                }
-        }
-        
-    }
     
+    let url = URL(string: "http://localhost:8080/api/register")
+    
+    Alamofire.request(url!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil)
+        .responseJSON { response in
+            
+            if let status = response.response?.statusCode {
+                switch(status){
+                case 201:
+                    completionHandler(true, response.error as? String)
+                case 400:
+                    completionHandler(false, response.error as? String)
+                    
+                case 401:
+                    completionHandler(false, response.error as? String)
+                    
+                    
+                default:
+                    //let error  = "Server Error!"
+                    completionHandler(false, response.error as? String)
+                }
+            }
+    }
+    }
 }

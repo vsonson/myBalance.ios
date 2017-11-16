@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z1z-oD-0tS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D3U-Rk-dnJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -255,9 +255,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quote" translatesAutoresizingMaskIntoConstraints="NO" id="eSL-fu-P7H">
-                                <rect key="frame" x="55.5" y="204.5" width="264" height="258"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlN-ek-DgR">
                                 <rect key="frame" x="292" y="577" width="27" height="26"/>
                                 <constraints>
@@ -269,19 +266,53 @@
                                     <segue destination="kIv-cl-uTl" kind="show" id="eTq-yV-ro7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of Day" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-jA-pZW">
+                                <rect key="frame" x="94" y="234" width="186" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="kpI-p5-bZn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quote Icon" translatesAutoresizingMaskIntoConstraints="NO" id="eSL-fu-P7H">
+                                <rect key="frame" x="57" y="258" width="260" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Tpz-vd-aUP"/>
+                                    <constraint firstAttribute="height" constant="36" id="eyN-SV-0eW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIH-fo-uN7">
+                                <rect key="frame" x="94" y="440" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eSL-fu-P7H" firstAttribute="centerX" secondItem="NNN-3o-Zn7" secondAttribute="centerX" id="5cj-cf-rIf"/>
-                            <constraint firstItem="eSL-fu-P7H" firstAttribute="centerY" secondItem="NNN-3o-Zn7" secondAttribute="centerY" id="bDg-HZ-yyg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eSL-fu-P7H" secondAttribute="trailing" constant="42" id="God-k2-lCG"/>
+                            <constraint firstItem="MIH-fo-uN7" firstAttribute="trailing" secondItem="Xoz-jA-pZW" secondAttribute="trailing" id="LWm-wh-sDi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xoz-jA-pZW" secondAttribute="trailing" constant="79" id="WuE-J5-m45"/>
+                            <constraint firstItem="Xoz-jA-pZW" firstAttribute="centerY" secondItem="NNN-3o-Zn7" secondAttribute="centerY" id="bVb-q5-t8W"/>
+                            <constraint firstItem="MIH-fo-uN7" firstAttribute="leading" secondItem="Xoz-jA-pZW" secondAttribute="leading" id="cP3-5L-OYZ"/>
+                            <constraint firstItem="eSL-fu-P7H" firstAttribute="top" secondItem="gzu-ua-Mec" secondAttribute="bottom" constant="238" id="jrf-BK-93t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SlN-ek-DgR" secondAttribute="trailing" constant="40" id="n5W-sY-aeh"/>
+                            <constraint firstItem="eSL-fu-P7H" firstAttribute="leading" secondItem="NNN-3o-Zn7" secondAttribute="leadingMargin" constant="41" id="oB3-7o-0MO"/>
+                            <constraint firstItem="Xoz-jA-pZW" firstAttribute="centerX" secondItem="NNN-3o-Zn7" secondAttribute="centerX" id="rSe-Ev-NEp"/>
+                            <constraint firstItem="Xoz-jA-pZW" firstAttribute="leading" secondItem="NNN-3o-Zn7" secondAttribute="leadingMargin" constant="78" id="vfN-H3-9IB"/>
                             <constraint firstItem="1gI-dc-asb" firstAttribute="top" secondItem="SlN-ek-DgR" secondAttribute="bottom" constant="64" id="vz6-qQ-Anr"/>
+                            <constraint firstItem="MIH-fo-uN7" firstAttribute="top" secondItem="Xoz-jA-pZW" secondAttribute="bottom" constant="8" symbolic="YES" id="wxf-7P-LoX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="MIH-fo-uN7" id="wl7-gH-wXg"/>
+                        <outlet property="quoteLabel" destination="Xoz-jA-pZW" id="fuE-BX-bTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIK-Y2-uPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="138"/>
+            <point key="canvasLocation" x="2485.5999999999999" y="137.18140929535232"/>
         </scene>
         <!--Train-->
         <scene sceneID="c9C-L1-h7K">
@@ -965,12 +996,12 @@
     <resources>
         <image name="BalancePositionScreen" width="1219" height="997"/>
         <image name="BalancePositionScreenNoTag" width="1191" height="809"/>
-        <image name="Quote" width="264" height="258"/>
+        <image name="Quote Icon" width="49" height="42"/>
         <image name="arrow" width="22" height="26"/>
         <image name="facebook-icon-30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oWZ-b1-PRW"/>
+        <segue reference="qED-LB-0Sh"/>
         <segue reference="WUy-dg-JyG"/>
     </inferredMetricsTieBreakers>
 </document>

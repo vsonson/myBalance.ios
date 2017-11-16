@@ -10,6 +10,7 @@
 		F40C76B4B2285541A28B58EF /* Pods_myBalance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2365E9D6DA1B42E93DB5C5BC /* Pods_myBalance.framework */; };
 		FC0BC50F1FB3F63200225270 /* UserInfoResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BC50E1FB3F63200225270 /* UserInfoResourceService.swift */; };
 		FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BC5111FB3F67E00225270 /* UserInfo.swift */; };
+		FC2762CD1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2762CC1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift */; };
 		FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FD0EA1FA678B7002E6529 /* AppDelegate.swift */; };
 		FC3FD0F01FA678B7002E6529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0EE1FA678B7002E6529 /* Main.storyboard */; };
 		FC3FD0F21FA678B7002E6529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F11FA678B7002E6529 /* Assets.xcassets */; };
@@ -30,7 +31,7 @@
 		FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */; };
 		FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */; };
 		FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4571FB153C300925441 /* AddProfileRequest.swift */; };
-		FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */; };
+		FCBB84551FAACBC200499326 /* QotdResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB84541FAACBC200499326 /* QotdResourceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E8C6AF305674208A9DC9C7F2 /* Pods-myBalance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBalance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myBalance/Pods-myBalance.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0BC50E1FB3F63200225270 /* UserInfoResourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResourceService.swift; sourceTree = "<group>"; };
 		FC0BC5111FB3F67E00225270 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FC2762CC1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteOfTheDayResponse.swift; sourceTree = "<group>"; };
 		FC3FD0E71FA678B7002E6529 /* myBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3FD0EA1FA678B7002E6529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3FD0EF1FA678B7002E6529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceService.swift; sourceTree = "<group>"; };
 		FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewModel.swift; sourceTree = "<group>"; };
 		FCA6F4571FB153C300925441 /* AddProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileRequest.swift; sourceTree = "<group>"; };
-		FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtOfDayService.swift; sourceTree = "<group>"; };
+		FCBB84541FAACBC200499326 /* QotdResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QotdResourceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,14 @@
 			name = "user-info-resource";
 			sourceTree = "<group>";
 		};
+		FC2762CB1FBBD9C6000502A6 /* qotd-resource */ = {
+			isa = PBXGroup;
+			children = (
+				FC2762CC1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift */,
+			);
+			name = "qotd-resource";
+			sourceTree = "<group>";
+		};
 		FC3FD0DE1FA678B7002E6529 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		FC3FD0FC1FA67A4A002E6529 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC2762CB1FBBD9C6000502A6 /* qotd-resource */,
 				FC0BC5101FB3F66F00225270 /* user-info-resource */,
 				FC8962B91FA6BF4200D75A8F /* account-resource */,
 				FC8962A31FA67F6B00D75A8F /* user-jwt-controller */,
@@ -178,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FC0BC50D1FB3F60200225270 /* user-info-resource */,
-				FCBB84531FAACB9E00499326 /* thought-of-day-resource */,
+				FCBB84531FAACB9E00499326 /* qotd-resource */,
 				FC8962BC1FA6BFE900D75A8F /* account-resource */,
 				FC8962AB1FA688CD00D75A8F /* user-jwt-controller */,
 				FC65C6901FB7E16B005513D2 /* ServiceBase.swift */,
@@ -270,12 +281,12 @@
 			name = "account-resource";
 			sourceTree = "<group>";
 		};
-		FCBB84531FAACB9E00499326 /* thought-of-day-resource */ = {
+		FCBB84531FAACB9E00499326 /* qotd-resource */ = {
 			isa = PBXGroup;
 			children = (
-				FCBB84541FAACBC200499326 /* ThoughtOfDayService.swift */,
+				FCBB84541FAACBC200499326 /* QotdResourceService.swift */,
 			);
-			name = "thought-of-day-resource";
+			name = "qotd-resource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +426,11 @@
 				FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */,
 				FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */,
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
-				FCBB84551FAACBC200499326 /* ThoughtOfDayService.swift in Sources */,
+				FCBB84551FAACBC200499326 /* QotdResourceService.swift in Sources */,
 				FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */,
 				FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */,
 				FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */,
+				FC2762CD1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift in Sources */,
 				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,

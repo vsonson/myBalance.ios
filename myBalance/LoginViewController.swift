@@ -66,12 +66,13 @@ class LoginViewController: UIViewController, LoginViewModelDelegate, UITextField
         }
         else{
             
-            UserJwtControllerService.authenticate(login: loginRequest) { (success, json, error) in
+            UserJwtControllerService.authenticate(login: loginRequest) { (success, token, error) in
                 if (success)
                 {
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    appDelegate.tokenVal = json["id_token"].string!
-                    self.performSegue(withIdentifier: "addProfile", sender: self);
+                    appDelegate.tokenVal = token
+
+                    self.performSegue(withIdentifier: "login", sender: self);
                     
                 }
                 else{
