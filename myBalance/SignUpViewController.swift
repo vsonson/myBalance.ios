@@ -78,6 +78,9 @@ class SignUpViewController: UIViewController, SignUpViewModelDelegate, UITextFie
             AccountResourceService.register(register: registerAccountRequest) { (success, json, error) in
             if (success)
             {
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.tokenVal = json["id_token"] as! String
+                
                  let alert = UIAlertController(title: "Success!", message: "You must verify your account and sign in.", preferredStyle: UIAlertControllerStyle.alert)
                 //self.performSegue(withIdentifier: "registerSuccess", sender: self);
                 

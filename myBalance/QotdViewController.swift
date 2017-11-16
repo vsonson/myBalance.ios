@@ -10,10 +10,25 @@ import UIKit
 
 class QotdViewController: UIViewController {
 
+    @IBOutlet var quoteLabel: UILabel!
+    @IBOutlet var authorLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        QotdResourceService.getQuoteOfDay() { (success, quote, error) in
+            if (success)
+            {
+                self.authorLabel.text = quote.author
+                self.quoteLabel.text = quote.quoteText
+                print(quote.quoteText)
+
+            }
+            else{
+                print(error)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
