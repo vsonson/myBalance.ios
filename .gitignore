@@ -23,4 +23,6 @@ build/
 # Backup files
 *~.nib
 
+
+myBalance.xcworkspace/xcuserdata/*
 myBalance.xcodeproj/xcuserdata/*
