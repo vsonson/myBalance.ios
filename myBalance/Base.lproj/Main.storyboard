@@ -327,7 +327,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Train" id="arQ-H7-qfV"/>
+                    <tabBarItem key="tabBarItem" title="Train" image="Mindfulness Training" id="arQ-H7-qfV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A52-hS-Toi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +346,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="nDo-82-xEy"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="Dashboard" id="nDo-82-xEy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="in0-jm-qiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -365,7 +365,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notebook" id="VPv-xu-1EX"/>
+                    <tabBarItem key="tabBarItem" title="Notebook" image="Notebook" id="VPv-xu-1EX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3H-Da-hrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,7 +384,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Resources" id="Eks-Ms-jbF"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="Resources" id="Eks-Ms-jbF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jf-F5-saA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,7 +403,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Track" id="WQv-kf-Ebw"/>
+                    <tabBarItem key="tabBarItem" title="Track" image="Track" id="WQv-kf-Ebw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNp-i1-qXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -996,7 +996,12 @@
     <resources>
         <image name="BalancePositionScreen" width="1219" height="997"/>
         <image name="BalancePositionScreenNoTag" width="1191" height="809"/>
+        <image name="Dashboard" width="16" height="16"/>
+        <image name="Mindfulness Training" width="16" height="16"/>
+        <image name="Notebook" width="16" height="16"/>
         <image name="Quote Icon" width="49" height="42"/>
+        <image name="Resources" width="16" height="16"/>
+        <image name="Track" width="16" height="16"/>
         <image name="arrow" width="22" height="26"/>
         <image name="facebook-icon-30x30" width="30" height="30"/>
     </resources>
