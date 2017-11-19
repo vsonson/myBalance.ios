@@ -16,6 +16,16 @@
 		FC3FD0F21FA678B7002E6529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F11FA678B7002E6529 /* Assets.xcassets */; };
 		FC3FD0F51FA678B7002E6529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3FD0F31FA678B7002E6529 /* LaunchScreen.storyboard */; };
 		FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */; };
+		FC59FB341FC105580046C613 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB331FC105580046C613 /* DashboardTableViewController.swift */; };
+		FC59FB371FC1057D0046C613 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB361FC1057D0046C613 /* SideMenuTableViewController.swift */; };
+		FC59FB391FC10A300046C613 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB381FC10A300046C613 /* MoodTableViewCell.swift */; };
+		FC59FB3B1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB3A1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift */; };
+		FC59FB3D1FC10B2C0046C613 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB3C1FC10B2C0046C613 /* NotificationsTableViewCell.swift */; };
+		FC59FB3F1FC10E630046C613 /* MyNetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB3E1FC10E630046C613 /* MyNetworkTableViewCell.swift */; };
+		FC59FB411FC10E7C0046C613 /* UpgradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB401FC10E7C0046C613 /* UpgradeTableViewCell.swift */; };
+		FC59FB431FC10E8D0046C613 /* HelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB421FC10E8D0046C613 /* HelpTableViewCell.swift */; };
+		FC59FB451FC10E9C0046C613 /* TermsOfServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB441FC10E9C0046C613 /* TermsOfServiceTableViewCell.swift */; };
+		FC59FB471FC10EA60046C613 /* LogOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59FB461FC10EA60046C613 /* LogOutTableViewCell.swift */; };
 		FC65C6911FB7E16B005513D2 /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65C6901FB7E16B005513D2 /* ServiceBase.swift */; };
 		FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */; };
 		FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */; };
@@ -48,6 +58,16 @@
 		FC3FD0F41FA678B7002E6529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3FD0F61FA678B7002E6529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
+		FC59FB331FC105580046C613 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
+		FC59FB361FC1057D0046C613 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		FC59FB381FC10A300046C613 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB3A1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB3C1FC10B2C0046C613 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB3E1FC10E630046C613 /* MyNetworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB401FC10E7C0046C613 /* UpgradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB421FC10E8D0046C613 /* HelpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB441FC10E9C0046C613 /* TermsOfServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceTableViewCell.swift; sourceTree = "<group>"; };
+		FC59FB461FC10EA60046C613 /* LogOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableViewCell.swift; sourceTree = "<group>"; };
 		FC65C6901FB7E16B005513D2 /* ServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
 		FC8742AE1FAFDA1200D315E5 /* AddProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		FC8962A11FA67F5B00D75A8F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +197,8 @@
 		FC3FD0FE1FA67A5B002E6529 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC59FB351FC1056F0046C613 /* Side Menu */,
+				FC59FB301FC104E30046C613 /* Dashboard */,
 				FC8962B41FA6B71B00D75A8F /* Sign Up */,
 				FC8962B01FA68C4400D75A8F /* QOTD */,
 				FC8962A01FA67F4800D75A8F /* Login */,
@@ -203,6 +225,30 @@
 				FC3FD1011FA67A8E002E6529 /* LandingScreenViewController.swift */,
 			);
 			name = "Landing Screen";
+			sourceTree = "<group>";
+		};
+		FC59FB301FC104E30046C613 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FC59FB331FC105580046C613 /* DashboardTableViewController.swift */,
+				FC59FB381FC10A300046C613 /* MoodTableViewCell.swift */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		FC59FB351FC1056F0046C613 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FC59FB361FC1057D0046C613 /* SideMenuTableViewController.swift */,
+				FC59FB3A1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift */,
+				FC59FB3C1FC10B2C0046C613 /* NotificationsTableViewCell.swift */,
+				FC59FB3E1FC10E630046C613 /* MyNetworkTableViewCell.swift */,
+				FC59FB401FC10E7C0046C613 /* UpgradeTableViewCell.swift */,
+				FC59FB421FC10E8D0046C613 /* HelpTableViewCell.swift */,
+				FC59FB441FC10E9C0046C613 /* TermsOfServiceTableViewCell.swift */,
+				FC59FB461FC10EA60046C613 /* LogOutTableViewCell.swift */,
+			);
+			name = "Side Menu";
 			sourceTree = "<group>";
 		};
 		FC8962A01FA67F4800D75A8F /* Login */ = {
@@ -402,12 +448,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-myBalance/Pods-myBalance-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -425,24 +473,34 @@
 			files = (
 				FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */,
 				FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */,
+				FC59FB3F1FC10E630046C613 /* MyNetworkTableViewCell.swift in Sources */,
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
 				FCBB84551FAACBC200499326 /* QotdResourceService.swift in Sources */,
 				FC3FD1021FA67A8E002E6529 /* LandingScreenViewController.swift in Sources */,
 				FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */,
 				FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */,
+				FC59FB411FC10E7C0046C613 /* UpgradeTableViewCell.swift in Sources */,
 				FC2762CD1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift in Sources */,
+				FC59FB3D1FC10B2C0046C613 /* NotificationsTableViewCell.swift in Sources */,
 				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,
+				FC59FB451FC10E9C0046C613 /* TermsOfServiceTableViewCell.swift in Sources */,
 				FC8962B61FA6B72E00D75A8F /* SignUpViewController.swift in Sources */,
+				FC59FB391FC10A300046C613 /* MoodTableViewCell.swift in Sources */,
+				FC59FB471FC10EA60046C613 /* LogOutTableViewCell.swift in Sources */,
 				FC0BC50F1FB3F63200225270 /* UserInfoResourceService.swift in Sources */,
+				FC59FB431FC10E8D0046C613 /* HelpTableViewCell.swift in Sources */,
 				FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */,
 				FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */,
 				FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */,
 				FC8962B21FA68C5700D75A8F /* QotdViewController.swift in Sources */,
 				FC65C6911FB7E16B005513D2 /* ServiceBase.swift in Sources */,
+				FC59FB341FC105580046C613 /* DashboardTableViewController.swift in Sources */,
+				FC59FB3B1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift in Sources */,
 				FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */,
 				FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */,
+				FC59FB371FC1057D0046C613 /* SideMenuTableViewController.swift in Sources */,
 				FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

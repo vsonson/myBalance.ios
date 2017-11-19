@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.5.1)
+  - SideMenu (3.1.1)
   - SkyFloatingLabelTextField (3.2.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - SideMenu
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  SideMenu: 1bf32e90afaa2dc0e0ab68e938a0ff85014c4217
   SkyFloatingLabelTextField: 71d28906024e7d7e4460099b342f3ca7036a2e24
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 009a5c2d8686e5e4ac0bf2b440ba686d8e95167f
+PODFILE CHECKSUM: 8a4aa2b4cf0fcd84cac3d2b8f7e29c9ffc9ccf0f
 
 COCOAPODS: 1.3.1

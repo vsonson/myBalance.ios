@@ -9,5 +9,6 @@ target 'myBalance' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'SideMenu'
   
 end
