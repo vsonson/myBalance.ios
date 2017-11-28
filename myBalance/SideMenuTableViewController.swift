@@ -9,7 +9,7 @@
 import UIKit
 
 class SideMenuTableViewController: UITableViewController {
-    var tableViewRowHeight: CGFloat = 117.0
+    //var tableViewRowHeight: CGFloat = 150.0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -117,10 +117,10 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     // Asks the table view delegate to return the height of a given row.
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        
-        return tableViewRowHeight
-    }
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        
+//        return tableViewRowHeight
+//    }
 
     /*
     // Override to support conditional editing of the table view.
