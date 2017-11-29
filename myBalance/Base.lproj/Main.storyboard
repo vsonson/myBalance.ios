@@ -235,8 +235,9 @@
                         <outlet property="loginButton" destination="H8x-Ak-KFa" id="zuN-Il-crm"/>
                         <outlet property="passwordTextField" destination="wwa-ZQ-zOk" id="wD3-PM-f2h"/>
                         <outlet property="usernameTextField" destination="1yt-82-XDV" id="O5U-8H-cHh"/>
-                        <segue destination="fO5-xU-ufv" kind="show" identifier="login" id="qED-LB-0Sh"/>
+                        <segue destination="fO5-xU-ufv" kind="show" identifier="showQotd" id="qED-LB-0Sh"/>
                         <segue destination="z1z-oD-0tS" kind="show" identifier="addProfile" id="UgZ-NY-A8Q"/>
+                        <segue destination="kIv-cl-uTl" kind="show" identifier="skipQotd" id="AOx-v1-wle"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8i-fN-f7s" sceneMemberID="firstResponder"/>
@@ -1297,6 +1298,7 @@
         <image name="myNetwork-blue" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AOx-v1-wle"/>
         <segue reference="qED-LB-0Sh"/>
         <segue reference="WUy-dg-JyG"/>
     </inferredMetricsTieBreakers>

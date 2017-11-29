@@ -69,10 +69,20 @@ class LoginViewController: UIViewController, LoginViewModelDelegate, UITextField
             UserJwtControllerService.authenticate(login: loginRequest) { (success, token, error) in
                 if (success)
                 {
+                    //store the auth token
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
                     appDelegate.tokenVal = token
+                    
+                    // check if new quote is available
+                    QotdResourceService.NewQuoteAvailable() { (success, showQuote, error) in
+                    if (success) {
+                        if (showQuote){
+                            self.performSegue(withIdentifier: "showQotd", sender: self);
+                        }
+                    }
 
-                    self.performSegue(withIdentifier: "login", sender: self);
+                    self.performSegue(withIdentifier: "skipQotd", sender: self);
+                    }
                     
                 }
                 else{

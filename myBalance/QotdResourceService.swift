@@ -34,4 +34,22 @@ class QotdResourceService: ServiceBase {
         }
     }
     
+    class func NewQuoteAvailable(completionHandler: @escaping (Bool, Bool, String?) -> Void) {
+        
+        let url = "quote-of-the-days/new"
+        
+        ExecuteRequest(parameters: [:], requestType: .get, url: url) { (success, json, error) in
+            if (success)
+            {
+                let id = json.boolValue
+
+                completionHandler(true, json.boolValue, nil)
+            }
+            else{
+                completionHandler(false, json.boolValue, error)
+            }
+            
+        }
+    }
+    
 }
