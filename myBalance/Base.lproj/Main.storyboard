@@ -619,6 +619,7 @@
                 <navigationController id="D0J-9P-WiO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Track" image="Track" id="la7-BR-kDa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Wr-ls-wVM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1266,6 +1267,7 @@
                 <navigationController id="uQP-Gz-8L1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dashboard" image="Dashboard" id="0gX-Zx-pwz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HMC-Tg-tBz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1298,8 +1300,8 @@
         <image name="myNetwork-blue" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AOx-v1-wle"/>
+        <segue reference="eTq-yV-ro7"/>
         <segue reference="qED-LB-0Sh"/>
-        <segue reference="WUy-dg-JyG"/>
+        <segue reference="gIc-YH-NGw"/>
     </inferredMetricsTieBreakers>
 </document>

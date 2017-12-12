@@ -12,23 +12,27 @@ class QotdViewController: UIViewController {
 
     @IBOutlet var quoteLabel: UILabel!
     @IBOutlet var authorLabel: UILabel!
-    
+    public var author = ""
+    public var quote = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        authorLabel.text = author
+        quoteLabel.text = quote
 
-        QotdResourceService.getQuoteOfDay() { (success, quote, error) in
-            if (success)
-            {
-                self.authorLabel.text = quote.author
-                self.quoteLabel.text = quote.quoteText
-                print(quote.quoteText)
-
-            }
-            else{
-                print(error)
-            }
-        }
+//        QotdResourceService.getQuoteOfDay() { (success, quote, error) in
+//            if (success)
+//            {
+//                self.text = quote.author
+//                self.quoteLabel.text = quote.quoteText
+//                print(quote.quoteText)
+//
+//            }
+//            else{
+//                print(error)
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {

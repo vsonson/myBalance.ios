@@ -77,7 +77,7 @@ class LoginViewController: UIViewController, LoginViewModelDelegate, UITextField
                     QotdResourceService.NewQuoteAvailable() { (success, showQuote, error) in
                     if (success) {
                         if (showQuote){
-                            self.performSegue(withIdentifier: "showQotd", sender: self);
+                            self.performSegue(withIdentifier: "showQotd", sender: self)
                         }
                     }
 
@@ -119,5 +119,38 @@ class LoginViewController: UIViewController, LoginViewModelDelegate, UITextField
         // Present the alert controller by calling the presentViewController method
         self.present(alertController, animated: true, completion: nil)
         
+    }
+    
+    /*
+     -------------------------
+     MARK: - Prepare For Segue
+     -------------------------
+     */
+    
+    // This method is called by the system whenever you invoke the method performSegueWithIdentifier:sender:
+    // You never call this method. It is invoked by the system.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showQotd" {
+            
+            // Obtain the object reference of the destination view controller
+            let qotdViewController: QotdViewController = (segue.destination as? QotdViewController)!
+        
+            
+            QotdResourceService.getQuoteOfDay() { (success, quote, error) in
+                if (success)
+                {
+                    qotdViewController.author = quote.author
+                    qotdViewController.quote = quote.quoteText
+                    //print(quote.quoteText)
+                    
+                }
+                else{
+                    print(error)
+                }
+            }
+            
+            
+        }
     }
 }
