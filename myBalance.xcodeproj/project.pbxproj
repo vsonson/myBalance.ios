@@ -41,6 +41,15 @@
 		FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */; };
 		FCA6F4561FB1536300925441 /* AddProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */; };
 		FCA6F4581FB153C300925441 /* AddProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6F4571FB153C300925441 /* AddProfileRequest.swift */; };
+		FCAFE9CE1FE0BB84004DAAE2 /* TrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9CD1FE0BB84004DAAE2 /* TrackTableViewController.swift */; };
+		FCAFE9D21FE0BCCE004DAAE2 /* SleepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9D11FE0BCCE004DAAE2 /* SleepTableViewCell.swift */; };
+		FCAFE9D41FE0BCD8004DAAE2 /* StressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9D31FE0BCD8004DAAE2 /* StressTableViewCell.swift */; };
+		FCAFE9D61FE0BCEC004DAAE2 /* InterestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9D51FE0BCEC004DAAE2 /* InterestsTableViewCell.swift */; };
+		FCAFE9D81FE0BCF8004DAAE2 /* ConcentrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9D71FE0BCF8004DAAE2 /* ConcentrationTableViewCell.swift */; };
+		FCAFE9DA1FE0BD17004DAAE2 /* IrritabilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9D91FE0BD17004DAAE2 /* IrritabilityTableViewCell.swift */; };
+		FCAFE9DC1FE0BD22004DAAE2 /* BodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9DB1FE0BD22004DAAE2 /* BodyTableViewCell.swift */; };
+		FCAFE9DE1FE0BD2E004DAAE2 /* PerformanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9DD1FE0BD2E004DAAE2 /* PerformanceTableViewCell.swift */; };
+		FCAFE9E01FE0BD39004DAAE2 /* EatingHabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE9DF1FE0BD39004DAAE2 /* EatingHabitsTableViewCell.swift */; };
 		FCBB84551FAACBC200499326 /* QotdResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB84541FAACBC200499326 /* QotdResourceService.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +92,15 @@
 		FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountResourceService.swift; sourceTree = "<group>"; };
 		FCA6F4551FB1536300925441 /* AddProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewModel.swift; sourceTree = "<group>"; };
 		FCA6F4571FB153C300925441 /* AddProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileRequest.swift; sourceTree = "<group>"; };
+		FCAFE9CD1FE0BB84004DAAE2 /* TrackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewController.swift; sourceTree = "<group>"; };
+		FCAFE9D11FE0BCCE004DAAE2 /* SleepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9D31FE0BCD8004DAAE2 /* StressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9D51FE0BCEC004DAAE2 /* InterestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9D71FE0BCF8004DAAE2 /* ConcentrationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9D91FE0BD17004DAAE2 /* IrritabilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrritabilityTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9DB1FE0BD22004DAAE2 /* BodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9DD1FE0BD2E004DAAE2 /* PerformanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTableViewCell.swift; sourceTree = "<group>"; };
+		FCAFE9DF1FE0BD39004DAAE2 /* EatingHabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatingHabitsTableViewCell.swift; sourceTree = "<group>"; };
 		FCBB84541FAACBC200499326 /* QotdResourceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QotdResourceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +215,7 @@
 		FC3FD0FE1FA67A5B002E6529 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCAFE9CC1FE0BB64004DAAE2 /* Track */,
 				FC59FB351FC1056F0046C613 /* Side Menu */,
 				FC59FB301FC104E30046C613 /* Dashboard */,
 				FC8962B41FA6B71B00D75A8F /* Sign Up */,
@@ -325,6 +344,22 @@
 				FC8962BD1FA6BFFA00D75A8F /* AccountResourceService.swift */,
 			);
 			name = "account-resource";
+			sourceTree = "<group>";
+		};
+		FCAFE9CC1FE0BB64004DAAE2 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE9CD1FE0BB84004DAAE2 /* TrackTableViewController.swift */,
+				FCAFE9D11FE0BCCE004DAAE2 /* SleepTableViewCell.swift */,
+				FCAFE9D31FE0BCD8004DAAE2 /* StressTableViewCell.swift */,
+				FCAFE9D51FE0BCEC004DAAE2 /* InterestsTableViewCell.swift */,
+				FCAFE9D71FE0BCF8004DAAE2 /* ConcentrationTableViewCell.swift */,
+				FCAFE9D91FE0BD17004DAAE2 /* IrritabilityTableViewCell.swift */,
+				FCAFE9DB1FE0BD22004DAAE2 /* BodyTableViewCell.swift */,
+				FCAFE9DD1FE0BD2E004DAAE2 /* PerformanceTableViewCell.swift */,
+				FCAFE9DF1FE0BD39004DAAE2 /* EatingHabitsTableViewCell.swift */,
+			);
+			name = Track;
 			sourceTree = "<group>";
 		};
 		FCBB84531FAACB9E00499326 /* qotd-resource */ = {
@@ -472,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC0BC5121FB3F67E00225270 /* UserInfo.swift in Sources */,
+				FCAFE9DC1FE0BD22004DAAE2 /* BodyTableViewCell.swift in Sources */,
 				FC8742AF1FAFDA1200D315E5 /* AddProfileViewController.swift in Sources */,
 				FC59FB3F1FC10E630046C613 /* MyNetworkTableViewCell.swift in Sources */,
 				FC8962A21FA67F5B00D75A8F /* LoginViewController.swift in Sources */,
@@ -482,6 +518,7 @@
 				FC59FB411FC10E7C0046C613 /* UpgradeTableViewCell.swift in Sources */,
 				FC2762CD1FBBD9DC000502A6 /* QuoteOfTheDayResponse.swift in Sources */,
 				FC59FB3D1FC10B2C0046C613 /* NotificationsTableViewCell.swift in Sources */,
+				FCAFE9D41FE0BCD8004DAAE2 /* StressTableViewCell.swift in Sources */,
 				FC8962BB1FA6BF5A00D75A8F /* RegisterAccountRequest.swift in Sources */,
 				FC8962AA1FA67FD800D75A8F /* LoginViewModel.swift in Sources */,
 				FC8962AD1FA688F900D75A8F /* UserJwtControllerService.swift in Sources */,
@@ -490,16 +527,23 @@
 				FC59FB391FC10A300046C613 /* MoodTableViewCell.swift in Sources */,
 				FC59FB471FC10EA60046C613 /* LogOutTableViewCell.swift in Sources */,
 				FC0BC50F1FB3F63200225270 /* UserInfoResourceService.swift in Sources */,
+				FCAFE9DE1FE0BD2E004DAAE2 /* PerformanceTableViewCell.swift in Sources */,
 				FC59FB431FC10E8D0046C613 /* HelpTableViewCell.swift in Sources */,
 				FC8962BE1FA6BFFA00D75A8F /* AccountResourceService.swift in Sources */,
+				FCAFE9E01FE0BD39004DAAE2 /* EatingHabitsTableViewCell.swift in Sources */,
+				FCAFE9D81FE0BCF8004DAAE2 /* ConcentrationTableViewCell.swift in Sources */,
+				FCAFE9CE1FE0BB84004DAAE2 /* TrackTableViewController.swift in Sources */,
 				FC8962A71FA67F9800D75A8F /* AuthenticateResponse.swift in Sources */,
+				FCAFE9D21FE0BCCE004DAAE2 /* SleepTableViewCell.swift in Sources */,
 				FC8962AF1FA6892900D75A8F /* ApiResponse.swift in Sources */,
 				FC8962B21FA68C5700D75A8F /* QotdViewController.swift in Sources */,
 				FC65C6911FB7E16B005513D2 /* ServiceBase.swift in Sources */,
+				FCAFE9D61FE0BCEC004DAAE2 /* InterestsTableViewCell.swift in Sources */,
 				FC59FB341FC105580046C613 /* DashboardTableViewController.swift in Sources */,
 				FC59FB3B1FC10B1F0046C613 /* ProfileSettingsTableViewCell.swift in Sources */,
 				FC3FD0EB1FA678B7002E6529 /* AppDelegate.swift in Sources */,
 				FC8962B81FA6BC3700D75A8F /* SignUpViewModel.swift in Sources */,
+				FCAFE9DA1FE0BD17004DAAE2 /* IrritabilityTableViewCell.swift in Sources */,
 				FC59FB371FC1057D0046C613 /* SideMenuTableViewController.swift in Sources */,
 				FC8962A51FA67F8A00D75A8F /* LoginRequest.swift in Sources */,
 			);
