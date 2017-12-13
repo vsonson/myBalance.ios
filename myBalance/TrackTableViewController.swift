@@ -34,7 +34,7 @@ class TrackTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 7
+        return 8
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,60 +55,69 @@ class TrackTableViewController: UITableViewController {
         }
             
         else if row == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Notifications")! as! NotificationsTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Stress")! as! StressTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "Notifications"
+            cell.titleLabel!.text = "Stress"
             
             return cell
         }
             
         else if row == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MyNetwork")! as! MyNetworkTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Interests")! as! InterestsTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "myNetwork"
+            cell.titleLabel!.text = "Interest in Activities"
             
             return cell
         }
             
         else if row == 3 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Upgrade")! as! UpgradeTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Concentration")! as! ConcentrationTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "Update to Premium"
+            cell.titleLabel!.text = "Concentration"
             
             return cell
         }
         else if row == 4 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Help")! as! HelpTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Irritability")! as! IrritabilityTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "App Help"
+            cell.titleLabel!.text = "Irritability"
             
             return cell
         }
             
         else if row == 5 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TermsOfService")! as! TermsOfServiceTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Body")! as! BodyTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "Terms of Service"
+            cell.titleLabel!.text = "Body"
+            
+            return cell
+        }
+        else if row == 6 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Performance")! as! PerformanceTableViewCell
+            
+            // Grab the row count from the indexPath in the cell
+            //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
+            cell.titleLabel!.text = "Performance"
             
             return cell
         }
             
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "LogOut")! as! LogOutTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EatingHabits")! as! EatingHabitsTableViewCell
             
             // Grab the row count from the indexPath in the cell
             //cell.thumbnailImage!.image = UIImage(named: "CaloriesBurnedIcon")
-            cell.titleLabel!.text = "Log Out"
+            cell.titleLabel!.text = "Eating Habits"
             
             return cell
         }

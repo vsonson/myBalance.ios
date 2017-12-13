@@ -9,7 +9,8 @@
 import UIKit
 
 class SleepTableViewCell: UITableViewCell {
-
+    @IBOutlet var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
